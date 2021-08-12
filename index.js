@@ -52,6 +52,10 @@ const burger = {
   discount: function (string) {
     if ("teacher" === string) {
       return this.price - this.price * 0.25;
+    } else if ("student" === string) {
+      return this.price - this.price * 0.25;
+    } else if ("public" === string) {
+      return this.price - this.price * 0.1;
     }
   }
 }
